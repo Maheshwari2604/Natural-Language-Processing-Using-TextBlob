@@ -1,3 +1,7 @@
+#pip install textblob
+#python -m textblob.download_corpora
+
+
 >>> from textblob import TextBlob
 >>> b = TextBlob('hey i am happy')
 >>> b.sentiment
