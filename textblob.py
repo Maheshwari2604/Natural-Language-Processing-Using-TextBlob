@@ -54,9 +54,8 @@ TextBlob("i am not happy")
 >>> b = TextBlob('enthusium')
 >>> b.correct()
 TextBlob("enthusiasm")
-
->>> b = TextBlob('i am not happ')
->>> b.words[3].spellcheck()
+print(b)
+b.words[3].spellcheck()
 [('happy', 0.919831223628692), ('rapp', 0.04219409282700422), ('harp', 0.03375527426160337), ('hasp', 0.004219409282700422)]
 
 >>> b.detect_language()
