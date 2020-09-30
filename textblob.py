@@ -8,10 +8,8 @@
 Sentiment(polarity=0.8, subjectivity=1.0)
 
 >>> from textblob import TextBlob
->>> b = textBlob('i am not happy')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'textBlob' is not defined
+b = textBlob('i am not happy')
+print(b,"chnges"
 >>> b = TextBlob('i am not happy')
 >>> b
 TextBlob("i am not happy")
