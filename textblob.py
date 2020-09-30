@@ -86,3 +86,6 @@ i NN
 am VBP
 not RB
 happ JJ
+
+b = TextBlob('enthusium')
+print(b.correct())
