@@ -15,13 +15,14 @@ NameError: name 'textBlob' is not defined
 >>> b = TextBlob('i am not happy')
 >>> b
 TextBlob("i am not happy")
+TextBlob("Hello ! This is cool boy and i am not happy")
 >>> b.sentiment
 Sentiment(polarity=-0.4, subjectivity=1.0)
 
 
 >>> for i in b:
 ...     print(i)
-... 
+        print("Hello")
 i
  
 a
