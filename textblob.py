@@ -61,8 +61,8 @@ TextBlob("enthusiasm")
 
 >>> b.detect_language()
 'en'
->>> bb = TextBlob('أحبك')
->>> bb.detect_language()
+bb = TextBlob('أحبك')
+bb.detect_language()
 'ar'
 >>> bb.translate(to='en')
 TextBlob("I love you")
@@ -86,3 +86,7 @@ i NN
 am VBP
 not RB
 happ JJ
+
+# polarity check in every manner
+b = TextBlob('hey i am happy')
+>>> b.sentiment
