@@ -17,43 +17,7 @@ NameError: name 'textBlob' is not defined
 TextBlob("i am not happy")
 >>> b.sentiment
 Sentiment(polarity=-0.4, subjectivity=1.0)
-
-
->>> for i in b:
-...     print(i)
-... 
-i
- 
-a
-m
- 
-n
-o
-t
- 
-h
-a
-p
-p
-y
-
-
->>> for i in b.words:
-...     print(i)
-... 
-i
-am
-not
-happy
-
-
->>> b = TextBlob('i am not happ')
->>> b.correct()
-TextBlob("i am not happy")
-
->>> b = TextBlob('enthusium')
->>> b.correct()
-TextBlob("enthusiasm")
+print(textblob)
 
 >>> b = TextBlob('i am not happ')
 >>> b.words[3].spellcheck()
