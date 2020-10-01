@@ -24,7 +24,12 @@ Sentiment(polarity=-0.4, subjectivity=1.0)
 ... 
 i
  
-a
+aimport TextBlob
+>>> b = TextBlob('hey i am happy')
+>>> b.sentiment
+Sentiment(polarity=0.8, subjectivity=1.0)
+
+>>> from textblob import TextBlob
 m
  
 n
@@ -69,6 +74,19 @@ TextBlob("I love you")
 >>> c = bb.translate(to='en')
 >>> for words, tag in blob.tags:
 ...     print(words, tags)
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'blob' is not defined
+>>> for words, tag in b.tags:
+...     print(words, tags)
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+NameError: name 'tags' is not defined
+>>> for words, tag in b.tags:
+...     print(words, tag)
+... 
 ... 
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
