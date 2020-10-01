@@ -24,7 +24,12 @@ Sentiment(polarity=-0.4, subjectivity=1.0)
 ... 
 i
  
-a
+aimport TextBlob
+>>> b = TextBlob('hey i am happy')
+>>> b.sentiment
+Sentiment(polarity=0.8, subjectivity=1.0)
+
+>>> from textblob import TextBlob
 m
  
 n
